@@ -10,7 +10,13 @@ export interface IButtonProps {
 }
 
 export const Button: FC<IButtonProps> = ({ onClick, disabled, className, children }) => (
-  <button type="button" className={cx('button', className)} onClick={onClick} disabled={disabled} data-testid="button-comp">
+  <button
+    type="button"
+    className={cx('button', className)}
+    onClick={onClick}
+    disabled={disabled}
+    data-testid="button-comp"
+  >
     {children}
   </button>
 );
