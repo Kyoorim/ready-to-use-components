@@ -3,16 +3,22 @@ import styled from 'styled-components';
 // eslint-disable-next-line prettier/prettier
 import { flexbox, FlexboxProps, grid, GridProps, layout, LayoutProps } from 'styled-system';
 
-const StackBox = styled.div`
+const StackBox = styled.div<CustomProps>`
   ${flexbox}
   ${grid}
   ${layout}
+  display: flex;
+  flex-direction: ${(props) => props.direction};
 `;
 
-export type StackProps = FlexboxProps & GridProps & LayoutProps;
+export interface CustomProps {
+  direction?: string;
+}
 
-const Stack: FCC<StackProps> = (props: any) => {
-  return <StackBox {...props} data-testid="stack-comp"></StackBox>;
+export type StackProps = CustomProps & FlexboxProps & GridProps & LayoutProps;
+
+const Stack: FCC<StackProps> = ({ direction = 'column', ...props }) => {
+  return <StackBox data-testid="stack-comp" direction={direction} {...props}></StackBox>;
 };
 
 export default Stack;
