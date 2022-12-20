@@ -1,24 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
+// eslint-disable-next-line prettier/prettier
+import { flexbox, FlexboxProps, grid, GridProps, layout, LayoutProps } from 'styled-system';
 
-export const StackBox = styled.div`
+const StackBox = styled.div<CustomProps>`
+  ${flexbox}
+  ${grid}
+  ${layout}
   display: flex;
-  flex-direction: column;
-`;
-export const StackContent = styled.div`
-  border: 1px solid black;
-  width: 50%;
-  text-align: center;
-  border-radius: 5px;
-  padding: 10px 0px;
+  flex-direction: ${(props) => props.direction};
+  gap: ${(props) => props.gap};
 `;
 
-export const Stack = () => {
-  return (
-    <StackBox>
-      <StackContent>1</StackContent>
-      <StackContent>2</StackContent>
-      <StackContent>3</StackContent>
-    </StackBox>
-  );
+export interface CustomProps {
+  direction?: string;
+  gap?: string;
+}
+
+export type StackProps = CustomProps & FlexboxProps & GridProps & LayoutProps;
+
+const Stack: FCC<StackProps> = ({ direction = 'column', gap = '10px', ...props }) => {
+  return <StackBox data-testid="stack-comp" direction={direction} gap={gap} {...props}></StackBox>;
 };
+
+export default Stack;

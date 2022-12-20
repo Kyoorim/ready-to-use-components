@@ -10,6 +10,7 @@ export interface IButtonProps {
 }
 
 export const Button: FC<IButtonProps> = ({ onClick, disabled, className, children }) => (
+  // eslint-disable-next-line prettier/prettier
   <button
     type="button"
     className={cx('button', className)}
