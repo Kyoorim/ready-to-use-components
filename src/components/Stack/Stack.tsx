@@ -9,16 +9,18 @@ const StackBox = styled.div<CustomProps>`
   ${layout}
   display: flex;
   flex-direction: ${(props) => props.direction};
+  gap: ${(props) => props.gap};
 `;
 
 export interface CustomProps {
   direction?: string;
+  gap?: string;
 }
 
 export type StackProps = CustomProps & FlexboxProps & GridProps & LayoutProps;
 
-const Stack: FCC<StackProps> = ({ direction = 'column', ...props }) => {
-  return <StackBox data-testid="stack-comp" direction={direction} {...props}></StackBox>;
+const Stack: FCC<StackProps> = ({ direction = 'column', gap = '10px', ...props }) => {
+  return <StackBox data-testid="stack-comp" direction={direction} gap={gap} {...props}></StackBox>;
 };
 
 export default Stack;
