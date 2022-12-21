@@ -5,7 +5,7 @@ import { CustomProps } from 'components/Stack';
 import Box from '../Box/Box';
 
 export default {
-  title: 'Hstack',
+  title: 'HStack',
   component: Hstack,
 } as Meta<CustomProps>;
 
