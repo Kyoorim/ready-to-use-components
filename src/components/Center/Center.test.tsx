@@ -20,13 +20,9 @@ describe('<Center />', () => {
     expect(screen.getByText(/Center/i)).toBeInTheDocument();
   });
 
-  it('should allow custom className', () => {
-    const props = {
-      ...defaultProps,
-      className: 'Custom',
-    };
-    render(<Center {...props} />);
+  it('should have all items centered', () => {
+    render(<Center {...defaultProps} />);
 
-    expect(screen.getByTestId('center-comp')).toHaveProperty('className');
+    expect(screen.getByTestId('center-comp')).toHaveStyle('display: flex; justify-content:center; align-items:center');
   });
 });
