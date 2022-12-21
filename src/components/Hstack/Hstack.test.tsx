@@ -29,4 +29,10 @@ describe('<Hstack />', () => {
 
     expect(screen.getByTestId('hstack-comp')).toHaveProperty('className');
   });
+
+  it('should only allow row stacks', () => {
+    render(<Hstack {...defaultProps} />);
+
+    expect(screen.getByTestId('hstack-comp')).toHaveStyle('flex-direction: row');
+  });
 });
