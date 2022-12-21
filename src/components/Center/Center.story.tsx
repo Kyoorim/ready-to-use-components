@@ -8,11 +8,6 @@ export default {
   component: Center,
 } as Meta<BoxProps>;
 
-const styles = {
-  backgroundColor: 'black',
-  color: 'white',
-};
-
 export const Default: FC = () => {
-  return <Center {...styles}>Center</Center>;
+  return <Center>Center</Center>;
 };
