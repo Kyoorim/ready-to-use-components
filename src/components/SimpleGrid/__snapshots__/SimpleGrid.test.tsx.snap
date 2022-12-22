@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SimpleGrid /> should render 1`] = `
+<div
+  class="sc-bcXHqe lkQTgH"
+  data-testid="simpleGrid-comp"
+>
+  SimpleGrid
+</div>
+`;
