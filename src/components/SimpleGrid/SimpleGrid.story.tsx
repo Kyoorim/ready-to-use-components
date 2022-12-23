@@ -10,7 +10,7 @@ export default {
 
 export const Default: FC = () => {
   return (
-    <SimpleGrid>
+    <SimpleGrid column={2}>
       <Box>1</Box>
       <Box>2</Box>
       <Box>3</Box>
