@@ -20,7 +20,8 @@ export interface CustomProps {
 
 export type SimpleGridProps = CustomProps & LayoutProps & SpaceProps & GridProps;
 
-const SimpleGrid: FCC<SimpleGridProps> = ({ column, spacingX, spacingY, ...props }) => {
+export const SimpleGrid: FCC<SimpleGridProps> = ({ column, spacingX, spacingY, ...props }) => {
+  // eslint-disable-next-line prettier/prettier
   return (
     <SimpleGridBox
       data-testid="simpleGrid-comp"
