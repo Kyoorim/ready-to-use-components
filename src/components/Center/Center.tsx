@@ -7,7 +7,7 @@ const CenterStyles = {
   alignItems: 'center',
 };
 
-const Center: FCC<BoxProps> = ({ children, ...props }) => {
+export const Center: FCC<BoxProps> = ({ children, ...props }) => {
   return (
     <Box {...CenterStyles} {...props} data-testid="center-comp">
       {children}

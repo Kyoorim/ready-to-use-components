@@ -19,7 +19,7 @@ export interface CustomProps {
 
 export type StackProps = CustomProps & FlexboxProps & GridProps & LayoutProps;
 
-const Stack: FCC<StackProps> = ({ direction = 'column', gap = '10px', ...props }) => {
+export const Stack: FCC<StackProps> = ({ direction = 'column', gap = '10px', ...props }) => {
   return <StackBox data-testid="stack-comp" direction={direction} gap={gap} {...props}></StackBox>;
 };
 
