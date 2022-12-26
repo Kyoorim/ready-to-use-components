@@ -10,7 +10,7 @@ describe('<Center />', () => {
   it('should render', () => {
     render(<Center {...defaultProps} />);
 
-    expect(screen.getByTestId('center-comp')).toMatchSnapshot();
+    expect(screen.getByTestId('center-comp')).toBeInTheDocument();
   });
 
   it('should render children', () => {

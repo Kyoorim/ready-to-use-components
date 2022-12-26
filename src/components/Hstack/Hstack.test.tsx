@@ -11,7 +11,7 @@ describe('<Hstack />', () => {
   it('should render', () => {
     render(<Hstack {...defaultProps} />);
 
-    expect(screen.getByTestId('hstack-comp')).toMatchSnapshot();
+    expect(screen.getByTestId('hstack-comp')).toBeInTheDocument();
   });
 
   it('should render children', () => {

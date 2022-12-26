@@ -11,7 +11,7 @@ describe('<SimpleGrid />', () => {
   it('should render', () => {
     render(<SimpleGrid {...defaultProps} />);
 
-    expect(screen.getByTestId('simpleGrid-comp')).toMatchSnapshot();
+    expect(screen.getByTestId('simpleGrid-comp')).toBeInTheDocument();
   });
 
   it('should render children', () => {

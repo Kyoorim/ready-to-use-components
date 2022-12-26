@@ -11,7 +11,7 @@ describe('<Stack />', () => {
   it('should render', () => {
     render(<Stack {...defaultProps} />);
 
-    expect(screen.getByTestId('stack-comp')).toMatchSnapshot();
+    expect(screen.getByTestId('stack-comp')).toBeInTheDocument();
   });
 
   it('should render children', () => {
