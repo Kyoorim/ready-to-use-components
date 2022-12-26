@@ -3,7 +3,6 @@ import { render, screen } from '@testing-library/react';
 import Center from './Center';
 
 const defaultProps = {
-  onClick: jest.fn(),
   children: 'Center',
 };
 
