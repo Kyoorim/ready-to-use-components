@@ -2,7 +2,7 @@
 
 exports[`<SimpleGrid /> should render 1`] = `
 <div
-  class="sc-bcXHqe lkQTgH"
+  class="sc-bcXHqe jswCoG"
   data-testid="simpleGrid-comp"
 >
   SimpleGrid

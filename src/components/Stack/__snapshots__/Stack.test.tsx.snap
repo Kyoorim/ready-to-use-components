@@ -2,8 +2,9 @@
 
 exports[`<Stack /> should render 1`] = `
 <div
-  class="sc-bcXHqe csJgvw"
+  class="sc-bcXHqe gCioCn"
   data-testid="stack-comp"
+  direction="column"
 >
   Stack
 </div>

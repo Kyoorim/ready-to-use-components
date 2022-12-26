@@ -11,7 +11,7 @@ describe('<Box />', () => {
   it('should render', () => {
     render(<Box {...defaultProps} />);
 
-    expect(screen.getByTestId('box-comp')).toMatchSnapshot();
+    expect(screen.getByTestId('box-comp')).toBeInTheDocument();
   });
 
   it('should render children', () => {
