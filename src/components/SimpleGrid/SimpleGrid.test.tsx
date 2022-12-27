@@ -25,7 +25,7 @@ describe('<SimpleGrid />', () => {
       ...defaultProps,
       className: 'Custom',
     };
-    render(<SimpleGrid column={3} {...props} />);
+    render(<SimpleGrid {...props} />);
 
     expect(screen.getByTestId('simpleGrid-comp')).toHaveProperty('className');
   });
