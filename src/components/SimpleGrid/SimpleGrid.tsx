@@ -13,7 +13,7 @@ const SimpleGridBox = styled.div<CustomProps>`
 `;
 
 export interface CustomProps {
-  column: number;
+  column?: number;
   spacingX?: string | number;
   spacingY?: string | number;
 }
