@@ -1,137 +1,39 @@
-# Getting started
+# ready-to-use-components
+React UI components : Box, Center, Stack, Hstack, SimpleGrid
 
-There are two methods for getting started with this repo.
+<br/>
 
-#### Familiar with Git?
+## 🕶 Preview
 
+<img width="1137" alt="스크린샷 2022-12-28 오후 3 35 28" src="https://user-images.githubusercontent.com/86146661/209769164-f60a7293-e80e-4be4-90fe-7483c5ff587a.png">
+
+<br/>
+
+## 🥑 installation
+`npm i ready-to-use-components`
+
+<br/>
+
+## 👀 how to apply
+```tsx
+import {SimpleGrid, Box} from 'ready-to-use-components'
+
+const App = () => {
+  return (
+    <SimpleGrid>
+      <Box>1</Box>
+      <Box>2</Box>
+      <Box>3</Box>
+      <Box>4</Box>
+    </SimpleGrid>
+  )
+}
 ```
-git clone git@github.com:KaiHotz/react-rollup-boilerplate.git
-cd react-rollup-boilerplate
-yarn install
-```
+<br/>
 
-#### Not Familiar with Git?
-
-Click [here](https://github.com/KaiHotz/react-rollup-boilerplate/archive/master.zip) to download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-yarn install
-```
+## 👩🏻‍💻 teck stack
+>
+<img src="https://img.shields.io/badge/mac os-000000?style=for-the-badge&logo=macos&logoColor=white"> <img src="https://img.shields.io/badge/google chrome-4285F4?style=for-the-badge&logo=google%20chrome&logoColor=white"> <img src="https://img.shields.io/badge/visual studio code-007ACC?style=for-the-badge&logo=visual studio code&logoColor=white"></br>
+<img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"> <img src="https://img.shields.io/badge/storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white"/>
 
 
-## Developing
-
-To start the developing run :
-
-```
-yarn start
-```
-
-This will build a version of your library, run the watcher and also run Storybook.
-To open Storybook manually open your Browser and navigate to [http://localhost:6060](http://localhost:6060).
-Start developing your components in `src/components` folder and update the `src/index.js` file accordingly.
-Always provide an `YourComponent.story.tsx` file, so your component will show up in Storybook.
-
-You can refer to example `Button` component, but I think you'll get the idea.
-
-### Proposals (Babel)
-
-For smoother development some Babel plugin are included
-- [class-properties](https://github.com/babel/babel/tree/master/packages/babel-plugin-proposal-class-properties)
-- [object-rest-spread](https://github.com/babel/babel/tree/master/packages/babel-plugin-proposal-object-rest-spread)
-- [optional-chaining](https://github.com/babel/babel/tree/master/packages/babel-plugin-proposal-optional-chaining)
-
-## Styling your components
-
-`SCSS` and `CSS` are supported out of the box just import your styles into your component like you normally would do.
-For the use of  `CSS Modules` refer to [rollup-plugin-postcss](https://github.com/egoist/rollup-plugin-postcss)
-
-## Testing
-
-Testing is done with [Jest](https://facebook.github.io/jest/) and [@testing-library/react](https://testing-library.com/docs/react-testing-library/intro/)
-You can refer to `Button.test.js` as an example.
-```
-yarn test
-```
-or (for getting coverage)
-```
-yarn test:coverage
-```
-
-
-## Linting
-
-Linting is set up through [ESLint](https://eslint.org/) and configured with  [eslint-config-react-app](https://www.npmjs.com/package/eslint-config-react-app) and
-[eslint-config-prettier](https://github.com/prettier/eslint-config-prettier).
-You can modify linting rules by overriding them in the `.eslintrc.json` file.
-
-```
-yarn lint
-```
-or (if automatic fixing is possible)
-```
-yarn lint:fix
-```
-
-## Publishing your library to NPM
-
-To release your library to NPM or your private Registry, make sure you have an active account at [NPM](https://www.npmjs.com/), your `.npmrc` file is correctly setup and the repository url in `package.json` file is set to your repository url, then:
-
-```
-yarn release
-```
-
-## Storybook
-
-For custom layouts, styling and more information about Storybook, please refer to [Storybook](https://storybook.js.org/basics/writing-stories/) documentation.
-
-#### Deploy Storybook to GitHub Pages
-
-Make sure the repository url in `package.json` file is set to your repository url, then:
-
-```
-yarn deploy
-```
-
-## Scripts
-
-- `yarn start` : Only serves Storybook.
-- `yarn build` : Builds your library (build can be found in `dist` folder).
-- `yarn storybook:build` : Builds the static Storybook in case you want to deploy it.
-- `yarn test` : Runs the tests.
-- `yarn test:coverage`: Runs the test and shows the coverage.
-- `yarn lint` : Runs the linter, Typescript typecheck and stylelint.
-- `yarn lint:fix` : Runs the linter, Typescript typecheck and stylelint and fixes automatic fixable issues.
-- `yarn eslint`: Runs only the JavaScript linter.
-- `yarn eslint:fix`: Runs only the JavaScript linter and fixes automatic fixable issues.
-- `yarn stylelint`: Runs only the style linter.
-- `yarn stylelint:fix`: Runs only the style linter and fixes automatic fixable issues.
-- `yarn check-types`: Runs typescript type checker.
-- `yarn release` : Publishes your Library on NPM or your private Registry (depending on your config in your `.npmrc` file).
-- `yarn deploy`: Deploys the Styleguide to GitHub Pages.
-
-
-## Resources
-
-### Bundler
-- [Rollup.js](https://rollupjs.org/guide/en)
-
-### Code Formatter
-- [Prettier](https://prettier.io/)
-
-### Storybook
-- [Storybook](https://storybook.js.org/)
-
-### Testing
-- [Jest](https://facebook.github.io/jest/)
-- [@testing-library/react](https://testing-library.com/docs/react-testing-library/intro/)
-
-### Linting
-- [ESLint](https://eslint.org/)
-- [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
-- [eslint-config-react-app](https://www.npmjs.com/package/eslint-config-react-app)
-- [stylelint-prettier](https://github.com/prettier/stylelint-prettier)
-- [stylelint-scss](https://github.com/kristerkari/stylelint-scss)
-### Compiler
-- [Babel 7](https://babeljs.io/)
-- [Typescript](https://www.typescriptlang.org/)
