@@ -12,6 +12,7 @@ import {
   TypographyProps,
 } from 'styled-system';
 import React from 'react';
+import { FCC } from 'types';
 
 const StyledBox = styled.div`
   ${space}
