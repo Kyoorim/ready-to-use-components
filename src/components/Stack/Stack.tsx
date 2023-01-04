@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 // eslint-disable-next-line prettier/prettier
 import { flexbox, FlexboxProps, grid, GridProps, layout, LayoutProps } from 'styled-system';
+import { FCC } from 'types';
 
 const StackBox = styled.div<CustomProps>`
   ${flexbox}

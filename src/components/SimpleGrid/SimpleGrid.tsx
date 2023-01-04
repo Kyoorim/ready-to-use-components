@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { grid, GridProps, layout, LayoutProps, space, SpaceProps } from 'styled-system';
+import { FCC } from 'types';
 
 const SimpleGridBox = styled.div<CustomProps>`
   ${layout}
