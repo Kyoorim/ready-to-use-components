@@ -10,6 +10,12 @@ import {
   FlexboxProps,
   typography,
   TypographyProps,
+  border,
+  position,
+  shadow,
+  BorderProps,
+  PositionProps,
+  ShadowProps,
 } from 'styled-system';
 import React from 'react';
 import { FCC } from 'types';
@@ -20,9 +26,20 @@ const StyledBox = styled.div`
   ${color}
   ${flexbox}
   ${typography}
+  ${border}
+  ${position}
+  ${shadow}
 `;
 
-export type BoxProps = SpaceProps & LayoutProps & ColorProps & FlexboxProps & TypographyProps;
+// eslint-disable-next-line prettier/prettier
+export type BoxProps = SpaceProps &
+  LayoutProps &
+  ColorProps &
+  FlexboxProps &
+  TypographyProps &
+  BorderProps &
+  PositionProps &
+  ShadowProps;
 
 export const Box: FCC<BoxProps> = (props: any) => {
   return <StyledBox {...props} data-testid={props['data-testid'] ? props['data-testid'] : 'box-comp'} />;
