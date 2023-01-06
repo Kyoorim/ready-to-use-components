@@ -15,7 +15,7 @@ import {
   space,
   SpaceProps,
 } from 'styled-system';
-import { FCC } from 'types';
+import { FCC } from '../../types';
 
 const StackBox = styled.div<CustomProps>`
   ${flexbox}

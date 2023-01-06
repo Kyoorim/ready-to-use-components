@@ -1,6 +1,6 @@
 import React from 'react';
 import Box, { BoxProps } from '../Box/Box';
-import { FCC } from 'types';
+import { FCC } from '../../types';
 
 const CenterStyles = {
   display: 'flex',
