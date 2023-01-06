@@ -34,6 +34,7 @@ const StackBox = styled.div<CustomProps>`
 export interface CustomProps {
   direction?: string;
   gap?: string | number;
+  color?: string;
 }
 
 export type StackProps = CustomProps & FlexboxProps & GridProps & LayoutProps & SpaceProps & BorderProps & ColorProps;

@@ -11,15 +11,19 @@ const SimpleGridBox = styled.div<CustomProps>`
   display: grid;
   grid-column-gap: ${(props) => `${props.spacingX}px`};
   grid-row-gap: ${(props) => `${props.spacingY}px`};
-  grid-template-columns: ${(props) => `repeat(${props.column}, 1fr)`};
+  grid-template-columns: ${(props) => `${props.columnLeft}fr ${props.columnRight}fr`};
+
   box-sizing: 'border-box';
   min-width: 0;
 `;
 
 export interface CustomProps {
-  column?: number;
+  column?: string | number;
   spacingX?: string | number;
   spacingY?: string | number;
+  columnLeft?: string | number;
+  columnRight?: string | number;
+  color?: string;
 }
 
 export type SimpleGridProps = CustomProps & LayoutProps & SpaceProps & GridProps & ColorProps;
