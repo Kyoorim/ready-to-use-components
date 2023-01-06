@@ -10,15 +10,15 @@ import {
   FlexboxProps,
   typography,
   TypographyProps,
-  border,
   position,
   shadow,
   BorderProps,
   PositionProps,
   ShadowProps,
+  border,
 } from 'styled-system';
 import React from 'react';
-import { FCC } from 'types';
+import { FCC } from '../../types';
 
 const StyledBox = styled.div`
   ${space}
@@ -29,6 +29,8 @@ const StyledBox = styled.div`
   ${border}
   ${position}
   ${shadow}
+  box-sizing:border-box;
+  min-width: 0;
 `;
 
 // eslint-disable-next-line prettier/prettier
