@@ -1,6 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-import { color, ColorProps, grid, GridProps, layout, LayoutProps, space, SpaceProps } from 'styled-system';
+// eslint-disable-next-line prettier/prettier
+import {
+  border,
+  BorderProps,
+  color,
+  ColorProps,
+  grid,
+  GridProps,
+  layout,
+  LayoutProps,
+  space,
+  SpaceProps,
+} from 'styled-system';
 import { FCC } from '../../types';
 
 const SimpleGridBox = styled.div<CustomProps>`
@@ -8,6 +20,7 @@ const SimpleGridBox = styled.div<CustomProps>`
   ${space}
   ${grid}
   ${color}
+  ${border}
   display: grid;
   grid-column-gap: ${(props) => `${props.spacingX}px`};
   grid-row-gap: ${(props) => `${props.spacingY}px`};
@@ -23,7 +36,7 @@ export interface CustomProps {
   color?: string;
 }
 
-export type SimpleGridProps = CustomProps & LayoutProps & SpaceProps & GridProps & ColorProps;
+export type SimpleGridProps = CustomProps & LayoutProps & SpaceProps & GridProps & ColorProps & BorderProps;
 
 export const SimpleGrid: FCC<SimpleGridProps> = ({ column, spacingX, spacingY, ...props }) => {
   // eslint-disable-next-line prettier/prettier
