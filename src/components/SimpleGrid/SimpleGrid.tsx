@@ -25,7 +25,7 @@ const SimpleGridBox = styled.div<CustomProps>`
   grid-column-gap: ${(props) => `${props.spacingX}px`};
   grid-row-gap: ${(props) => `${props.spacingY}px`};
   grid-template-columns: ${(props) => `repeat(${props.column}, 1fr)`};
-  box-sizing: 'border-box';
+  box-sizing: border-box;
   min-width: 0;
 `;
 

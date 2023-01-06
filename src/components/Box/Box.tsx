@@ -29,7 +29,7 @@ const StyledBox = styled.div`
   ${border}
   ${position}
   ${shadow}
-  box-sizing:'border-box';
+  box-sizing:border-box;
   min-width: 0;
 `;
 

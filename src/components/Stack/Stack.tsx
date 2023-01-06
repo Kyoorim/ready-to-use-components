@@ -27,7 +27,7 @@ const StackBox = styled.div<CustomProps>`
   display: flex;
   flex-direction: ${(props) => props.direction};
   gap: ${(props) => props.gap};
-  box-sizing: 'border-box';
+  box-sizing: border-box;
   min-width: 0;
 `;
 
