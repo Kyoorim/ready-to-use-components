@@ -1,5 +1,6 @@
 # ready-to-use-components
-React UI components : Box, Center, Stack, Hstack, SimpleGrid
+React UI components based on storybook : Box, Center, Stack, Hstack, SimpleGrid
+Testing code for each component
 
 <br/>
 
