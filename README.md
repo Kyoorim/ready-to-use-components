@@ -2,6 +2,8 @@
 > React UI components based on storybook : Box, Center, Stack, Hstack, SimpleGrid
 > 
 > Testing code for each component
+>
+> <a href="https://www.npmjs.com/package/ready-to-use-components/"> Go to npm link </a>  
 
 <br/>
 
